@@ -1,0 +1,12 @@
+.container {
+  font-family: Helvetica, Arial, sans-serif;
+
+  &__header {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  &__description {
+    font-size: 24px;
+  }
+}
