@@ -14,7 +14,7 @@ module.exports = {
   },
 
   plugins: [
-    new ExtractTextPlugin('storyBuilder.min.css'),
+    new ExtractTextPlugin('reactAttach.min.css'),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.optimize.UglifyJsPlugin(),
     new webpack.DefinePlugin({

@@ -25,6 +25,6 @@ if (isDev) {
   module.hot.accept('./components/app/App', () => { render(App) });
 }
 
-export default function renderWidget(attachEl) {
+export function renderWidget(attachEl) {
   ReactDOM.render(<App {...renderProps} />, attachEl);
 }
