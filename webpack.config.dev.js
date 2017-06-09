@@ -10,9 +10,9 @@ module.exports = {
 
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'storyBuilder.js',
+    filename: 'reactAttach.js',
     publicPath: '/',
-    library: 'storyBuilder',
+    library: 'reactAttach',
     libraryTarget: 'umd'
   },
 
