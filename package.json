@@ -1,7 +1,7 @@
 {
   "name": "react-external-boilerplate",
   "version": "0.1.0",
-  "description": "",
+  "description": "A stripped-down boilerplate for creating a React app to attach to an otherwise non-React app",
   "author": "Andrew Gibson <agibson@texastribune.org>",
   "main": [],
   "repository": {
