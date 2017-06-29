@@ -25,8 +25,11 @@ if (isDev) {
   module.hot.accept('./components/app/App', () => { render(App) });
 }
 
-function renderApp(attachEl) {
-  ReactDOM.render(<App {...baseProps} />, attachEl);
+function renderApp(attachEl, additionalProps) {
+  ReactDOM.render(
+    <App {...baseProps} {...additionalProps} />,
+    attachEl
+  );
 }
 
 export {
