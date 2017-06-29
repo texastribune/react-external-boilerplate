@@ -1,15 +1,15 @@
 {
-  "name": "react-attach",
+  "name": "react-external-boilerplate",
   "version": "0.1.0",
   "description": "",
   "author": "Andrew Gibson <agibson@texastribune.org>",
   "main": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/texastribune/react-attach"
+    "url": "https://github.com/texastribune/react-external-boilerplate"
   },
   "bugs": {
-    "url": "https://github.com/texastribune/react-attach/issues"
+    "url": "https://github.com/texastribune/react-external-boilerplate/issues"
   },
   "scripts": {
     "start": "NODE_ENV=development node server.js",
