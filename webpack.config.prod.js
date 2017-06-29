@@ -7,14 +7,14 @@ module.exports = {
 
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'reactAttach.min.js',
+    filename: 'reactExternal.min.js',
     publicPath: '/',
-    library: 'reactAttach',
+    library: 'reactExternal',
     libraryTarget: 'umd'
   },
 
   plugins: [
-    new ExtractTextPlugin('reactAttach.min.css'),
+    new ExtractTextPlugin('reactExternal.min.css'),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.optimize.UglifyJsPlugin(),
     new webpack.DefinePlugin({
