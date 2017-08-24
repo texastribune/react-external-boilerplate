@@ -10,7 +10,7 @@ module.exports = {
     filename: 'reactExternal.min.js',
     publicPath: '/',
     library: 'reactExternal',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
   },
 
   plugins: [
@@ -18,8 +18,8 @@ module.exports = {
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.optimize.UglifyJsPlugin(),
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production')
-    })
+      'process.env.NODE_ENV': JSON.stringify('production'),
+    }),
   ],
 
   module: {
@@ -27,7 +27,7 @@ module.exports = {
       {
         test: /\.js$/,
         loaders: 'babel-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
 
       {
@@ -40,13 +40,13 @@ module.exports = {
               options: {
                 importLoaders: 1,
                 modules: true,
-                localIdentName: '[local]--[hash:base64:5]'
-              }
+                localIdentName: '[local]--[hash:base64:5]',
+              },
             },
-            'sass-loader'
-          ]
-        })
-      }
-    ]
-  }
+            'sass-loader',
+          ],
+        }),
+      },
+    ],
+  },
 };

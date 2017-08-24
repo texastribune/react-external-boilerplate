@@ -5,7 +5,7 @@ module.exports = {
   entry: [
     'react-hot-loader/patch',
     'webpack-hot-middleware/client',
-    './src/index'
+    './src/index',
   ],
 
   output: {
@@ -13,15 +13,15 @@ module.exports = {
     filename: 'reactExternal.js',
     publicPath: '/',
     library: 'reactExternal',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
   },
 
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('development')
-    })
+      'process.env.NODE_ENV': JSON.stringify('development'),
+    }),
   ],
 
   module: {
@@ -29,7 +29,7 @@ module.exports = {
       {
         test: /\.js$/,
         loaders: 'babel-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
 
       {
@@ -41,12 +41,12 @@ module.exports = {
             options: {
               importLoaders: 1,
               modules: true,
-              localIdentName: '[local]--[hash:base64:5]'
-            }
+              localIdentName: '[local]--[hash:base64:5]',
+            },
           },
-          { loader: 'sass-loader' }
-        ]
-      }
-    ]
-  }
+          { loader: 'sass-loader' },
+        ],
+      },
+    ],
+  },
 };

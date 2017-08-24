@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import styles from '../../scss/app.scss';
@@ -11,7 +11,7 @@ const App = ({ description }) => (
 );
 
 App.propTypes = {
-  description: PropTypes.string
+  description: PropTypes.string.isRequired,
 };
 
 export default App;
