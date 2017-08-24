@@ -12,7 +12,7 @@ const baseProps = {
 };
 
 if (isDev) {
-  const render = Component => {
+  const render = (Component) => {
     ReactDOM.render(
       <AppContainer>
         <Component {...baseProps} />
@@ -27,7 +27,10 @@ if (isDev) {
 
 function renderApp(attachEl, additionalProps) {
   ReactDOM.render(
-    <App {...baseProps} {...additionalProps} />,
+    <App
+      {...baseProps}
+      {...additionalProps}
+    />,
     attachEl
   );
 }

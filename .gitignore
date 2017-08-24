@@ -1,6 +1,7 @@
 .*
 !.gitignore
 !.babelrc
+!.editorconfig
 
 node_modules/
 dist/
