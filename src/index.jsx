@@ -1,3 +1,5 @@
+/* global document */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
@@ -18,7 +20,7 @@ if (isDev) {
         <Component {...baseProps} />
       </AppContainer>,
       document.getElementById('root'),
-    )
+    );
   };
 
   render(App);
